@@ -4,7 +4,7 @@
     </head>
     <body>
         <script type="text/javascript">
-            var age=prompt("Enter Your age");
+           /* var age=prompt("Enter Your age");
             if(Number(age)<18)
             {
                 alert("Sorry, you are too young to drive this car. Powering off");
@@ -15,8 +15,45 @@
             }
             else if(Number(age)>18){
                 alert("Powering On. Enjoy the ride!");
+            } 
+         function checkDriverAge()
+         {
+            var age=prompt("Enter Your age");
+            if(Number(age)<18)
+            {
+                console.log("Sorry, you are too young to drive this car. Powering off");
             }
-        
+            else if(Number(age)===18){
+                console.log("Congratulations on your first year of driving. Enjoy the ride!");
+
+            }
+            else if(Number(age)>18){
+                console.log("Powering On. Enjoy the ride!");
+            } 
+         }
+
+         checkDriverAge();  
+*/
+          function checkDriverAge2(age)
+          {
+            if(Number(age)<18)
+            {
+                return "Sorry, you are too young to drive this car. Powering off";
+            }
+            else if(Number(age)===18){
+                return "Congratulations on your first year of driving. Enjoy the ride!";
+
+            }
+            else if(Number(age)>18){
+                return "Powering On. Enjoy the ride!";
+            }  
+          }
+
+          var realage=prompt("enter your age");
+          checkDriverAge2(realage);
         </script>
+         
+         
+
     </body>
 </html>
